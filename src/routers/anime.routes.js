@@ -16,5 +16,6 @@ router.patch('/anime/:id', putAnime) //Para actualizar algunos datos de la tabla
 
 router.delete('/anime/:id', deleteAnime)
 
+
 export default router
 

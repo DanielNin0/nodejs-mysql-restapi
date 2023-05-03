@@ -1,6 +1,8 @@
 import { json } from "express";
 import { pool } from "../db.js";
 
+
+
 export const getAnimes= async (req, res)=>{
     try {
         const [result] = await pool.query('SELECT * from anime')
@@ -110,3 +112,5 @@ export const putAnime= async (req, res)=> {
             })
         }
 }
+
+
